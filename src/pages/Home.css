@@ -1,0 +1,148 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Main Container - Unified Hero and Cards Section */
+.main-container {
+  background: linear-gradient(135deg, #e8f5e9 0%, #f1f8f6 100%);
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Content */
+.hero-content {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #00a86b;
+  margin: 0 0 1rem 0;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.hero-text {
+  font-size: 1.3rem;
+  color: #555;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.hero-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-right-text {
+  font-size: 1.5rem;
+  color: #003d4d;
+  font-style: italic;
+  font-weight: 600;
+  text-align: right;
+  line-height: 1.6;
+}
+
+/* Cards Container */
+.cards-container {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-text {
+    font-size: 1.1rem;
+  }
+
+  .hero-right-text {
+    font-size: 1.3rem;
+  }
+
+  .cards-container {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 3rem 1.5rem;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .hero-right-text {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    padding: 2rem 1rem;
+  }
+
+  .hero-content {
+    margin-bottom: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-text {
+    font-size: 0.95rem;
+  }
+
+  .hero-right-text {
+    font-size: 1rem;
+  }
+
+  .cards-container {
+    gap: 1rem;
+  }
+}
