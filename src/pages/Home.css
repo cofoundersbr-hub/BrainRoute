@@ -7,7 +7,7 @@
 /* Main Container - Unified Hero and Cards Section */
 .main-container {
   background: linear-gradient(135deg, #fff 0%, #fff 100%);
-  padding: 5rem 2rem;
+  padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,13 +16,16 @@
 
 /* Hero Content */
 .hero-content {
-  max-width: 1200px;
+  max-width: 100%;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding: 0 1rem;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  display: flex;
+  justify-content: space-between;
   gap: 4rem;
   align-items: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .hero-left {
@@ -32,11 +35,13 @@
 }
 
 .hero-title {
-  font-size: 5.5rem;
+  font-size: 8rem;
   font-weight: 900;
   color: #049169;
   margin: 0 0 1rem 0;
   line-height: 1.1;
+   white-space: nowrap;
+
   letter-spacing: -1px;
 }
 
@@ -50,8 +55,10 @@
 
 .hero-right {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .hero-right-text {
@@ -65,8 +72,9 @@
 
 /* Cards Container */
 .cards-container {
-  max-width: 1200px;
+  max-width: 100%;
   width: 100%;
+  padding: 0 1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
@@ -75,7 +83,7 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
   .hero-title {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 
   .hero-text {
@@ -103,7 +111,7 @@
   }
 
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .hero-text {
@@ -131,7 +139,7 @@
   }
 
   .hero-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .hero-text {

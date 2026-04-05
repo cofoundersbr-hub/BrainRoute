@@ -34,7 +34,7 @@ export default function Home() {
             <p className="hero-text">We truly want you to succeed</p>
           </div>
           <div className="hero-right">
-            <p className="hero-right-text">Choose your stream with confidence</p>
+            <p className="hero-right-text">Choose your stream with <br></br>confidence</p>
           </div>
         </div>
 
