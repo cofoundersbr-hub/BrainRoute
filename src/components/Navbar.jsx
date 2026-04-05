@@ -26,12 +26,15 @@ export default function Navbar({ onSignUpClick, onLogoClick }) {
         </div>
 
         {/* Menu Items */}
-        <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
+        
+          <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <li><a href="#experts">Experts insights</a></li>
           <li><a href="#career">Career path</a></li>
           <li><a href="#tutors">Find tutors</a></li>
           <li><a href="#collaborations">Collaborations</a></li>
+          <li><a href="#aboutUs">About Us</a></li>
         </ul>
+        
 
         {/* Sign Up Button */}
         <button className="signup-btn" onClick={onSignUpClick}>
