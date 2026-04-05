@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #ffffff;
+  background-color: #eefff2  ;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -63,12 +63,12 @@
 }
 
 .nav-menu li a:hover {
-  color: #00a86b;
+  color: #049169 ;
 }
 
 .signup-btn {
   background-color: #00a86b;
-  color: white;
+  color: #eefff2;
   border: none;
   padding: 0.6rem 1.5rem;
   border-radius: 6px;
@@ -89,17 +89,16 @@
 
 .hamburger {
   display: none;
-  flex-direction: column;
   cursor: pointer;
-  gap: 0.4rem;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background-color: #003d4d;
-  border-radius: 2px;
-  transition: all 0.3s ease;
+.hamburger img {
+  width: 100%;
+  height: 100%;
 }
 
 /* Mobile Responsive */
@@ -110,18 +109,6 @@
 
   .hamburger {
     display: flex;
-  }
-
-  .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 8px);
-  }
-
-  .hamburger.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
   }
 
   .nav-menu {

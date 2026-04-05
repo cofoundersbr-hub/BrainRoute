@@ -34,7 +34,7 @@
 .hero-title {
   font-size: 3.5rem;
   font-weight: 900;
-  color: #00a86b;
+  color: #049169;
   margin: 0 0 1rem 0;
   line-height: 1.1;
   letter-spacing: -1px;
@@ -42,7 +42,7 @@
 
 .hero-text {
   font-size: 1.3rem;
-  color: #555;
+  color: #008854;
   margin: 0;
   font-weight: 500;
   line-height: 1.6;
@@ -56,7 +56,7 @@
 
 .hero-right-text {
   font-size: 1.5rem;
-  color: #003d4d;
+  color: #1469a5;
   font-style: italic;
   font-weight: 600;
   text-align: right;

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Navbar.css';
 // Import logo from assets - update the filename if your logo has a different name
 import logoImage from '../assets/logo.png';
+import Hamburger from '../assets/menu.svg';
 
 export default function Navbar({ onSignUpClick, onLogoClick }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,13 +25,6 @@ export default function Navbar({ onSignUpClick, onLogoClick }) {
           <span className="logo-route">Route</span>
         </div>
 
-        {/* Hamburger Menu Icon */}
-        <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
         {/* Menu Items */}
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <li><a href="#experts">Experts insights</a></li>
@@ -43,6 +37,11 @@ export default function Navbar({ onSignUpClick, onLogoClick }) {
         <button className="signup-btn" onClick={onSignUpClick}>
           Sign up
         </button>
+
+        {/* Hamburger Menu */}
+        <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+        <img src={Hamburger} alt="menu" />
+        </div>
       </div>
     </nav>
   );
