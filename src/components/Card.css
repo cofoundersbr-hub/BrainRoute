@@ -10,7 +10,7 @@
 
 .card:hover {
   transform: translateY(-10px);
-  background-color: #15e31c;
+  background-color: #02946e ;
   box-shadow: 0 20px 40px rgba(0, 168, 107, 0.2);
 }
 
@@ -22,7 +22,7 @@
 }
 
 .card:hover .card-container {
-  background-color: #15e31c;
+  background-color: #02946e ;
 }
 
 .card-image {
@@ -37,7 +37,7 @@
 }
 
 .card:hover .card-image  {
-  background-color: #15e31c;
+  background-color: #02946e ;
 }
 
 .card-image img {
@@ -59,7 +59,7 @@
 }
 
 .card:hover .card-content {
-  background-color: #15e31c;
+  background-color: #02946e ;
 }
 
 .card:hover .card-title {
